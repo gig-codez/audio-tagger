@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Audio Song Editor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+  </head>
+  
+  <body class="bg-slate-100">
+    <section class="fixed px-10 bg-white top-0 flex flex-row justify-between items-center w-[100%]">
+      <h1 class="font-bold text-xl">Audio Song Editor</h1>
+
+    <input type="file" webkitdirectory/>
+      <div class="w-[100px] h-[100px] border rounded-lg px-4 cont">
+      </div>
+      <!-- <img src="/src/logo.png"  class="selected w-[80px] h-[40px]" width="100" height="100" /> -->
+    </section>
+   
+    <br/>
+<!--  -->
+    <div class="songs overflow-scroll-y"></div>
+
+    <!-- <button type="button" class="text-sm font-semibold leading-6 text-gray-900">Cancel</button> -->
+    <!-- <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Save</button> -->
+    <div class="border-2 bg-white fixed bottom-0 w-[50%] flex flex-row p-5 m-5 justify-between items-center">
+       <button class="image-upload rounded-md bg-indigo-600 px-3 py-2 text-md text-capitalize font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">select image</button>
+    <!-- <div class="cont"></div> -->
+    <button class="convert bg-green-600 p-3 rounded text-white text-md">Convert</button>
+    </div>
+   
+    <!-- <img class="image" width="100" height="100" alt="uploaded image"/> -->
+    
+
+    <script type="module" src="/src/renderer.js"></script>
+  </body>
+</html>
